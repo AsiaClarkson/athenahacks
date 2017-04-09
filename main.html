@@ -99,12 +99,34 @@
         position: absolute;
         top: 50px; right: 400px;
        }
+       #lightbox{
+           z-index: 2;
+           position: absolute;
+           width: 50%; height: 70%;
+           left: 25%; top: 10%;
+           opacity: .8;
+           background-color: black;
+           margin: 0 auto;
+           text-align: center;
+           color: white;
+           border-radius: 100px;
+       }
+       #lightbutton{
+            
+       }
     </style>
     <title>
     Athena's Domain
     </title>
     </head>
 <body>
+    <div id="lightbox">
+    <h1>A Girl's Guide to the Hacker Inside</h1>
+        <p>Paragraph 4 U</p>
+        
+        <input type="button" id="lightbutton" value="Begin">
+    
+    </div>
     <div id="imghome">
     <img id="room" src="img/IMG_9192.PNG">
  
@@ -124,6 +146,9 @@
     </div>
     </body>
 <script>
+    document.querySelector("#lightbutton").addEventListener("click", function(){
+        document.querySelector("#lightbox").style.visibility = "hidden";
+    });
     var words = new Array;
     
         words.push("Sally's parents arrived home from the toy store and much to her delight, they had brought new toys for her and her older brother Timmy. Sally pulls a toy robot out of the bag, fascinated by its flashing lights. The robot is snatched out of her handz by Timmy who says to her &#34;Girls should blay with dolls instead,&#34; handing her the doll in the bag.");
