@@ -1,13 +1,16 @@
+<!--
+A Girl's Guide to the Hacker Inside 
+AthenaHacks 2017 
+By Asia Clarkson, Athena Foo and Hal Pan 
+-->
 <html>
 <head>
    <style>
        body{
 
         font-family: avenir, helvetica, arial;
-/*        font-weight: bold;*/
-/*        background-image: url(img/greyfloral.png);  Background pattern from Subtle Patterns */
 
-        background-image: url(img/tree_bark.png); /* Background pattern from Subtle Patterns */
+        background-image: url(img/tree_bark.png); 
 
         text-align: center;
        } 
@@ -15,7 +18,12 @@
            border-radius: 40px; 
        }
        p{
-           font-size: 10pt;
+           font-size: 30pt; 
+       }
+/*       Girl, am I getting tired, I hope I didn’t make too many spelling mistakes.*/
+       h1{
+           font-size: 40pt;
+           padding: 20px;
        }
        #inputdiv{
            margin: auto;
@@ -26,7 +34,6 @@
            opacity: 0.8;
        }
        #leafy{
-/*          border: solid red 1px;*/
             width: 80px;
            height: 80px;
            position: absolute;
@@ -34,25 +41,21 @@
            top: 0;
        }
        #box{
-/*        border: solid red 1px;*/
-        width: 450px; height:100px;
-        top: 10px; left: 550px;
-        position: absolute;
-        visibility:hidden;
-        padding: 6px;
-        padding-top: 20px;
+            width: 450px; height:100px;
+            top: 10px; left: 550px;
+            position: absolute;
+            visibility:hidden;
+            padding: 6px;
+            padding-top: 20px;
        }
        #scootscoot{
-/*           border: solid red 1px;*/
             width: 250px;
            height: 300px;
            position: absolute;
            left: 7%;
-           bottom: 3%;
-           
+           bottom: 3%;    
        }
        #tv{
-/*           border: solid red 1px;*/
             width: 280px;
            height: 180px;
            position: absolute;
@@ -61,10 +64,8 @@
            transform: rotate(10deg);
            -moz-transform: rotate(10deg);
            -webkit-transform: rotate(10deg);
-           
        }
        #computer{
-/*           border: solid red 1px;*/
             width: 120px;
            height: 100px;
            position: absolute;
@@ -72,32 +73,31 @@
            top: 52%;
            transform: rotate(20deg);
            -moz-transform: rotate(20deg);
-           -webkit-transform: rotate(20deg);
-           
+           -webkit-transform: rotate(20deg); 
        }
+/*       It looks like people of all ages are being impacted by those who believe women are not able to reach the same technological requirements as men.*/
        #imghome{
-/*           border: solid red 1px;*/
            width:1024px;
            height:768px;
            margin: 0 auto;
            position: relative;
        }
        #inputdiv{
-        position: relative;
-        text-align: center;
+            position: relative;
+            text-align: center;
        }
        #inputbox{
-        height: 30%;
-        width: 25%;
-        position: absolute;
-        font-size: 20pt;
-        top: 50px; right: 500px;
+            height: 30%;
+            width: 25%;
+            position: absolute;
+            font-size: 20pt;
+            top: 50px; right: 620px;
        }
        #submit{
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: 50px; right: 400px;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 120px; right: 775px;
        }
        #lightbox{
            z-index: 2;
@@ -114,36 +114,35 @@
        #lightbutton{
             
        }
+/*       If you haven't completed the game yet, please don't go furthur, you'll spoil the game :(*/
     </style>
-    <title>
-    Athena's Domain
-    </title>
+    <title>Athena's Domain</title>
     </head>
-<body>
-    <div id="lightbox">
-    <h1>A Girl's Guide to the Hacker Inside</h1>
-        <p>Paragraph 4 U</p>
+    <body>
+        <div id="lightbox">
+            <h1>A Girl's Guide to the Hacker Inside</h1>
+            <p>Explore a girl's hack space and see if you can uncover the secret message. You never know, you might learn something new...</p>
         
-        <input type="button" id="lightbutton" value="Begin">
+            <input type="button" id="lightbutton" value="Begin">
     
-    </div>
-    <div id="imghome">
-    <img id="room" src="img/IMG_9192.PNG">
+        </div><!--end lightbox-->
+        <div id="imghome">
+        <img id="room" src="img/IMG_9192.PNG">
  
-    <div id="leafy"></div>
-        <div id="box">
-        <p> </p>
+            <div id="leafy"></div>
+            <div id="box">
+                <p> </p>
+            </div>
+            <div id="scootscoot"></div>
+            <div id="tv"></div>
+            <div id="computer"></div>
         </div>
-    <div id="scootscoot"></div>
-    <div id="tv"></div>
-    <div id="computer"></div>
-    </div>
     
     
-    <div id="inputdiv">
-    <input type="text" placeholder="Enter Message" id="inputbox">
-    <input type="button" value="Check" id="submit">
-    </div>
+        <div id="inputdiv">
+            <input type="text" placeholder="    enter all lower case, no spaces" id="inputbox">
+            <input type="button" value="Check" id="submit">
+        </div>
     </body>
 <script>
     document.querySelector("#lightbutton").addEventListener("click", function(){
@@ -216,7 +215,7 @@
     
     document.querySelector("#submit").addEventListener("click", function(){
         answer = document.querySelector("#inputbox").value;
-        rightanswer = "speak up";
+        rightanswer = "speakup";
         if(answer == rightanswer){
             alert("Congratulations!\n\n You've fought hard to be where you are now, battling to continue studying your passion in a world where many have turned away and left the room. Although you are going to have to face more difficult situations in the future with the same resolve. In doing so, you pave the way for others who you inspire to pursue their interests and not give up.\n\nUnlike many before you, there are a wealth of resources and people available to help you on your way. Don't be afraid to reach out to them, they want to help you succeed! \n\nThank you for playing and... \n\nFIGHT ON!!!");
         }
