@@ -74,6 +74,23 @@
            margin: 0 auto;
            position: relative;
        }
+       #inputdiv{
+        position: relative;
+        text-align: center;
+       }
+       #inputbox{
+        height: 30%;
+        width: 25%;
+        position: absolute;
+        font-size: 20pt;
+        top: 50px; right: 500px;
+       }
+       #submit{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50px; right: 400px;
+       }
     </style>
     <title>
     Athena's Domain
@@ -94,7 +111,8 @@
     
     
     <div id="inputdiv">
-    
+    <input type="text" placeholder="Enter Message" id="inputbox">
+    <input type="button" value="Check" id="submit">
     </div>
     </body>
 <script>
@@ -154,6 +172,17 @@
         box.style.visibility = "hidden";
         box.innerHTML = "";
     });
+    
+    document.querySelector("#submit").addEventListener("click", function(){
+        answer = document.querySelector("#inputbox").value;
+        rightanswer = "Speak Up";
+        if(answer == rightanswer || rightanswer.toLowerCase || rightanswer.toUpperCase){
+            alert("Congratulations! You’ve fought hard to be where you are now, battling to continue studying your passion in a world where many have turned away and left the room. Although you are going to have to face more difficult situations in the future with the same resolve. In doing so, you pave the way for others who you inspire to pursue their interests and not give up. Unlike many before you, there are a wealth of resources and people available to help you on your way. Don’t be afraid to reach out to them, they want to help you succeed! Thank you for playing and... FIGHT ON!!!");
+        }
+        else{
+            alert("Sorry, this message is incorrect");
+        }
+});
     
     </script>
 </html>
