@@ -1,0 +1,94 @@
+<html>
+<head>
+   <style>
+       body{
+        background-image: url(img/greyfloral.png); /* Background pattern from Subtle Patterns */
+        text-align: center;
+       } 
+       img{
+           border-radius: 40px;
+           
+           
+       }
+       #inputdiv{
+           margin: auto;
+           margin-top: 1%;
+         background-color: #1c3660;
+            width: 99%; height: 20%;
+           border-radius: 20px; 
+           opacity: 0.8;
+       }
+       #leafy{
+          border: solid red 1px;
+            width: 80px;
+           height: 80px;
+           position: absolute;
+           left: 20%;
+           top: 0;
+       }
+       #scootscoot{
+           border: solid red 1px;
+            width: 250px;
+           height: 300px;
+           position: absolute;
+           left: 7%;
+           bottom: 3%;
+           
+       }
+       #tv{
+           border: solid red 1px;
+            width: 280px;
+           height: 180px;
+           position: absolute;
+           left: 60%;
+           top: 27%;
+           transform: rotate(10deg);
+           -moz-transform: rotate(10deg);
+           -webkit-transform: rotate(10deg);
+           
+       }
+       #computer{
+           border: solid red 1px;
+            width: 120px;
+           height: 100px;
+           position: absolute;
+           left: 50%;
+           top: 52%;
+           transform: rotate(20deg);
+           -moz-transform: rotate(20deg);
+           -webkit-transform: rotate(20deg);
+           
+       }
+       #imghome{
+           border: solid red 1px;
+           width:1024px;
+           height:768px;
+           margin: 0 auto;
+           position: relative;
+       }
+    </style>
+    <title>
+    Athena's Domain
+    </title>
+    </head>
+<body>
+    <div id="imghome">
+    <img id="room" src="img/IMG_9192.PNG">
+ 
+    <div id="leafy"></div>
+    <div id="scootscoot"></div>
+    <div id="tv"></div>
+    <div id="computer"></div>
+    </div>
+    
+    
+    <div id="inputdiv">
+    
+    </div>
+    </body>
+<script>
+    document.querySelector("#leafy").addEventListener("click", function(){
+        alert(1);
+    });
+    </script>
+</html>
