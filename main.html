@@ -2,7 +2,7 @@
 <head>
    <style>
        body{
-        background-image: url(img/greyfloral.png); /* Background pattern from Subtle Patterns */
+        background-image: url(img/tree_bark.png); /* Background pattern from Subtle Patterns */
         text-align: center;
        } 
        img{
@@ -129,54 +129,62 @@
         box = document.querySelector("#box");
         box.style.visibility = "visible";
         box.innerHTML = words[0];
+        document.querySelector("#room").style.filter ="saturate(4)";
         
     });
     document.querySelector("#leafy").addEventListener("mouseout", function(){
         box = document.querySelector("#box");
         box.style.visibility = "hidden";
         box.innerHTML = "";
+        document.querySelector("#room").style.filter ="saturate(1)";
     });
     
         document.querySelector("#scootscoot").addEventListener("click", function(){
         box = document.querySelector("#box");
         box.style.visibility = "visible";
         box.innerHTML = words[1];
+        document.querySelector("#room").style.filter ="saturate(4)";
         
     });
     document.querySelector("#scootscoot").addEventListener("mouseout", function(){
         box = document.querySelector("#box");
         box.style.visibility = "hidden";
         box.innerHTML = "";
+        document.querySelector("#room").style.filter ="saturate(1)";
     });
     
         document.querySelector("#tv").addEventListener("click", function(){
         box = document.querySelector("#box");
         box.style.visibility = "visible";
         box.innerHTML = words[2];
+        document.querySelector("#room").style.filter ="saturate(4)";
         
     });
     document.querySelector("#tv").addEventListener("mouseout", function(){
         box = document.querySelector("#box");
         box.style.visibility = "hidden";
         box.innerHTML = "";
+        document.querySelector("#room").style.filter ="saturate(1)";
     });
     
         document.querySelector("#computer").addEventListener("click", function(){
         box = document.querySelector("#box");
         box.style.visibility = "visible";
         box.innerHTML = words[3];
+        document.querySelector("#room").style.filter ="saturate(4)";
         
     });
     document.querySelector("#computer").addEventListener("mouseout", function(){
         box = document.querySelector("#box");
         box.style.visibility = "hidden";
         box.innerHTML = "";
+        document.querySelector("#room").style.filter ="saturate(1)";
     });
     
     document.querySelector("#submit").addEventListener("click", function(){
         answer = document.querySelector("#inputbox").value;
-        rightanswer = "Speak Up";
-        if(answer == rightanswer || rightanswer.toLowerCase || rightanswer.toUpperCase){
+        rightanswer = "speak up";
+        if(answer == rightanswer){
             alert("Congratulations! You’ve fought hard to be where you are now, battling to continue studying your passion in a world where many have turned away and left the room. Although you are going to have to face more difficult situations in the future with the same resolve. In doing so, you pave the way for others who you inspire to pursue their interests and not give up. Unlike many before you, there are a wealth of resources and people available to help you on your way. Don’t be afraid to reach out to them, they want to help you succeed! Thank you for playing and... FIGHT ON!!!");
         }
         else{
