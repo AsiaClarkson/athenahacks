@@ -13,8 +13,8 @@ Video games?
 
 3) College Child
 
-
+Profs prefer male students wayyy more.
 
 4) Industry Adult
 
-Won't get promoted, work isn't recognized in comparison with Male counterparts'
+Won't get promoted, work isn't recognized in comparison with Male counterparts.
